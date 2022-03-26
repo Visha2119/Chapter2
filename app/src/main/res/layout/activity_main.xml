@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/nickname_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/kasi_vishalatchi"
+            android:textColor="#191717"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/What_is_your_Nickname"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck,TextContrastCheck"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/teal_700"
+            android:fontFamily="serif"
+            android:text="Done"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/nickname_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/i_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/star_image"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            tools:ignore="ImageContrastCheck" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:textSize="20sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
